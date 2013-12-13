@@ -121,7 +121,9 @@ module.exports = function(grunt)
                 }
             } catch (e) { }
         });
-
-        update();
+        
+        try {
+            update();
+        } catch (e) { }
     });
 };
